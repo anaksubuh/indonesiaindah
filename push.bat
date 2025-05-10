@@ -19,5 +19,3 @@ git commit -m "%COMMIT_MSG%"
 git branch -M main
 git remote add origin https://github.com/anaksubuh/indonesiaindah.io.git
 git push -u origin main --force
-
-pause
