@@ -17,5 +17,5 @@ git init
 git add .
 git commit -m "%COMMIT_MSG%"
 git branch -M main
-git remote add origin https://github.com/anaksubuh/indonesiaindah.github.io.git
+git remote add origin https://github.com/anaksubuh/indonesiaindah.git
 git push -u origin main --force
