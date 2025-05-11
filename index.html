@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Berita Kompas Clone</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indonesia Indah - Beranda</title>
+  <link rel="icon" href="https://github.com/anaksubuh/indonesiaindah/blob/main/img/incon.jpg?raw=true"
+    type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Kompas Clone</h1>
-    <button id="toggle-theme">🌓</button>
+
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-gray-100 dark:bg-gray-800 shadow-md p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/incon.jpg?raw=true" alt="" class="h-8 w-auto">
+      <span class="text-lg font-semibold text-black dark:text-white">Indonesia Indah</span>
+    </div>
+    <form class="hidden sm:block">
+      <input type="text" placeholder="Cari berita..." class="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-sm">
+    </form>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Nasional</a>
-    <a href="#">Internasional</a>
-    <a href="#">Teknologi</a>
-    <a href="#">Olahraga</a>
+  <!-- Navigation -->
+  <nav class="bg-gray-200 dark:bg-gray-700 p-2 flex flex-wrap gap-2 justify-center text-sm">
+    <a href="#" class="hover:underline text-black dark:text-white">Nasional</a>
+    <a href="#" class="hover:underline text-black dark:text-white">Internasional</a>
+    <a href="#" class="hover:underline text-black dark:text-white">Ekonomi</a>
+    <a href="#" class="hover:underline text-black dark:text-white">Teknologi</a>
+    <a href="#" class="hover:underline text-black dark:text-white">Olahraga</a>
+    <a href="#" class="hover:underline text-black dark:text-white">Hiburan</a>
   </nav>
+  <!-- Main Dashboard -->
+  <main class="p-6">
 
-  <section class="banner">
-    <h2>Breaking News: Teknologi AI Menguasai Dunia!</h2>
-  </section>
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 max-w-6xl mx-auto">
 
-  <main>
-    <article>
-      <h3>Perkembangan AI di Indonesia</h3>
-      <p>
-        Teknologi kecerdasan buatan (AI) semakin pesat berkembang di Indonesia. Banyak startup mulai mengintegrasikan AI dalam layanan mereka.
-      </p>
-    </article>
+      <style>
+        .caption {
+          font-size: 0.9em;
+          color: #ffffff;
+          /* putih terang */
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      </style>
+
+      <!-- Card 1 -->
+      <a href="/news/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang.html"
+        class="block bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img
+          src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang/IMG_1177.JPG?raw=true"
+          alt="Paskah UKMK" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="font-semibold text-lg mb-2 text-gray-900 dark:text-white">Paskah UKMK UNTIDAR 2025</h2>
+          <p class="caption">Perayaan Paskah UKMK UNTIDAR 2025 di Gereja Katolik Santa Maria Fatima, Magelang...</p>
+        </div>
+      </a>
+
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Kompas Clone. Semua Hak Dilindungi.</p>
-  </footer>
 
-  <script src="script.js"></script>
 </body>
+
 </html>
