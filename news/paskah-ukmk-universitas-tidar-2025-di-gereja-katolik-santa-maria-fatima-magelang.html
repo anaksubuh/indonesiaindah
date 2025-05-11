@@ -7,7 +7,8 @@
   <meta name="description"
     content="Berita terkini dari Kompas.com, menyajikan si nasional dan internasional terlengkap.">
   <title>Paskah ukmk UNTIDAR 2025</title>
-  <link rel="icon" href="https://github.com/anaksubuh/indonesiaindah/blob/main/img/incon.jpg?raw=true" type="image/jpeg">
+  <link rel="icon" href="https://github.com/anaksubuh/indonesiaindah/blob/main/img/incon.jpg?raw=true"
+    type="image/jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -17,16 +18,105 @@
     body {
       font-family: 'Open Sans', sans-serif;
     }
+
+    .main-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    article {
+      flex: 2;
+      /* Mengambil ruang lebih banyak untuk konten utama */
+      padding-right: 20px;
+      border-right: 1px solid #eee;
+      /* Pemisah visual */
+    }
+
+    .sidebar {
+      flex: 1;
+      /* Mengambil sebagian ruang untuk sidebar */
+      padding-left: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .sidebar li:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #0056b3;
+      font-size: 0.9em;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      color: #007bff;
+    }
+
+    .dark .sidebar h2 {
+      color: #ddd;
+    }
+
+    .dark .sidebar li {
+      border-bottom: 1px solid #555;
+    }
+
+    .dark .sidebar a {
+      color: #aaffff;
+    }
+
+    /* Styling untuk container gambar dan caption */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .container .caption {
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
 
-  <!-- Header -->
   <header class="bg-gray-100 dark:bg-gray-800 shadow-md p-4 flex justify-between items-center">
     <div class="flex items-center space-x-4">
-      <img src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/incon.jpg?raw=true" alt="" class="h-8 w-auto">
-      <span class="text-lg font-semibold text-black dark:text-white">indonesia Indah</span>
+      <img src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/incon.jpg?raw=true" alt="Logo Indonesia Indah"
+        class="h-8 w-auto">
+      <span class="text-lg font-semibold text-black dark:text-white">Indonesia Indah</span>
     </div>
     <div class="flex items-center space-x-3">
       <form class="hidden sm:block">
@@ -38,7 +128,6 @@
     </div>
   </header>
 
-  <!-- Navigation -->
   <nav class="bg-gray-200 dark:bg-gray-700 p-2 flex flex-wrap gap-2 justify-center text-sm">
     <a href="#" class="hover:underline text-black dark:text-white">Nasional</a>
     <a href="#" class="hover:underline text-black dark:text-white">Internasional</a>
@@ -48,181 +137,217 @@
     <a href="#" class="hover:underline text-black dark:text-white">Hiburan</a>
   </nav>
 
-  <!-- Main Content -->
   <main class="p-4">
-    <article class="max-w-4xl mx-auto">
-      <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-        Paskah UKMK Universitas Tidar 2025 di Gereja Katolik Santa Maria Fatima Magelang
-      </h1>
-      <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">BERITA-11 Mei 2025</p>
+    <div class="main-container">
+      <article>
+        <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+          Paskah UKMK Universitas Tidar 2025 di Gereja Katolik Santa Maria Fatima Magelang
+        </h1>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">BERITA-11 Mei 2025</p>
 
-      <style>
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+        <div class="container">
+          <img
+            src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang/IMG_1177.JPG?raw=true"
+            alt="Romo Ignatius Adi Sapto Wibowo memulai komuni">
+          <p class="caption">Romo Ignatius Adi Sapto Wibowo memulai komuni</p>
+        </div>
 
-        img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-          margin-bottom: 10px;
-        }
+        <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Paskah Ukmk UNTIDAR 2025</h2>
+        <p class="text-base mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+          UKMK Universitas Tidar merupakan singkatan dari Unit Kegiatan Mahasiswa Kristiani, yang berdiri pada tahun
+          1978.
+          UKMK adalah salah satu organisasi kerohanian di lingkungan Universitas Tidar, yang mewadahi mahasiswa beragama
+          Kristen Protestan dan Katolik.
+          Organisasi ini memiliki visi untuk mewujudkan unit kegiatan mahasiswa Kristiani yang bertumbuh dalam iman,
+          pelayanan, dan kasih setia.
+        </p>
 
-        .caption {
-          font-size: 0.9em;
-          color: #f0e9e9;
-          text-align: center;
-        }
-      </style>
-      <div class="container">
-        <img
-          src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang/IMG_1177.JPG?raw=true"
-          alt="Romo Ignatius Adi Sapto Wibowo memulai komuni">
-        <p class="caption">Romo Ignatius Adi Sapto Wibowo memulai komuni</p>
-      </div>
+        <div class="container">
+          <img
+            src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang/IMG_1185.JPG?raw=true"
+            alt="Tim paduan suara KATOLIK">
+          <p class="caption">Tim paduan suara KATOLIK</p>
+        </div>
 
-      <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Paskah Ukmk UNTIDAR 2025</h2>
-      <p class="text-base mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
-        UKMK Universitas Tidar merupakan singkatan dari Unit Kegiatan Mahasiswa Kristiani, yang berdiri pada tahun 1978.
-        UKMK adalah salah satu organisasi kerohanian di lingkungan Universitas Tidar, yang mewadahi mahasiswa beragama
-        Kristen Protestan dan Katolik.
-        Organisasi ini memiliki visi untuk mewujudkan unit kegiatan mahasiswa Kristiani yang bertumbuh dalam iman,
-        pelayanan, dan kasih setia.
-      </p>
+        <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Paskah Ukmk UNTIDAR 2025</h2>
+        <p class="text-base mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+          UKMK Universitas Tidar merupakan singkatan dari Unit Kegiatan Mahasiswa Kristiani, yang berdiri pada tahun
+          1978.
+          UKMK adalah salah satu organisasi kerohanian di lingkungan Universitas Tidar, yang mewadahi mahasiswa beragama
+          Kristen Protestan dan Katolik.
+          Organisasi ini memiliki visi untuk mewujudkan unit kegiatan mahasiswa Kristiani yang bertumbuh dalam iman,
+          pelayanan, dan kasih setia.
+        </p>
 
-      <style>
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+        <div class="container">
+          <img
+            src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang/img_1245.jpg?raw=true"
+            alt="Peserta Paskah di Aula Gereja Santa Maria Fatima Magelang">
+          <p class="caption">Peserta Paskah di Aula Gereja Santa Maria Fatima Magelang</p>
+        </div>
 
-        img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-          margin-bottom: 10px;
-        }
+        <p class="text-base mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+          Romo Ignatius kemudian menyampaikan pesan firman Tuhan demikian, "Be Rise, Be Love, Be Light memiliki sebuah
+          arti yang lugas. Be Rise berarti “Bangkitlah”, Be Love berarti “Jadilah Cinta”, Be Light berarti “Jadilah
+          Cahaya”.
 
-        .caption {
-          font-size: 0.9em;
-          color: #f0e9e9;
-          text-align: center;
-        }
-      </style>
-      <div class="container">
-        <img
-          src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang/IMG_1185.JPG?raw=true"
-          alt="Romo Ignatius Adi Sapto Wibowo memulai komuni" width="70%">
-        <p class="caption">Tim paduan suara KATOLIK</p>
-      </div>
+          Makna kebangkitan Yesus yang dapat kita ambil dan relevansikan dengan kehidupan sehari-hari adalah ajakan
+          untuk
+          bangkit—bangkit dari rasa malas, dari sikap acuh tak acuh, dari keengganan untuk belajar dan membaca, serta
+          dari
+          berbagai godaan yang menghalangi kita untuk berjuang kembali.
 
-      <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Paskah Ukmk UNTIDAR 2025</h2>
-      <p class="text-base mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
-        UKMK Universitas Tidar merupakan singkatan dari Unit Kegiatan Mahasiswa Kristiani, yang berdiri pada tahun 1978.
-        UKMK adalah salah satu organisasi kerohanian di lingkungan Universitas Tidar, yang mewadahi mahasiswa beragama
-        Kristen Protestan dan Katolik.
-        Organisasi ini memiliki visi untuk mewujudkan unit kegiatan mahasiswa Kristiani yang bertumbuh dalam iman,
-        pelayanan, dan kasih setia.
-      </p>
+          Ketika Yesus hadir di tengah-tengah para rasul, Ia mengajak kita untuk keluar dari segala bentuk ketertindasan
+          batin: rasa malas, egoisme, dan kecenderungan untuk menang sendiri semua hal yang menghambat kita untuk
+          bangkit
+          dan bertumbuh.
 
-      <style>
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 20px;
-          /* Jarak bawah container */
-        }
+          Setelah bangkit dari semua itu, kita diajak menjadi cinta yang menerangi. Sudahkah kita sungguh menyadari apa
+          saja yang selama ini menghalangi kita untuk bangkit? Dan, maukah kita dengan sungguh melakukan kebangkitan
+          dari
+          hal-hal yang membuat hidup kita seolah terbelenggu atau terkutuk?
 
-        .container img {
-          max-width: 70%;
-          /* Mengikuti lebar yang Anda tentukan di tag img */
-          height: auto;
-          display: block;
-          margin-bottom: 15px;
-          /* Jarak bawah gambar */
-          border-radius: 8px;
-          /* Optional: Sudut melengkung pada gambar */
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          /* Optional: Efek bayangan pada gambar */
-        }
+          Berdasarkan cinta Yesus yang telah mengorbankan diri untuk kita, orang-orang dibuat terkejut. Terkejut karena
+          dilakukan Rasul di Kerajaan Kekal mereka manusia biasa yang berani bercerita Paskah di hadapan orang-orang
+          pilihan. Sering kali kita direndahkan oleh orang lain karena kita malas, sering terlambat, dan tidak mau
+          belajar.
 
-        .caption {
-          font-size: 0.9em;
-          color: #555;
-          /* Warna teks caption yang lebih terbaca */
-          text-align: center;
-          margin-bottom: 20px;
-          /* Jarak bawah caption ke paragraf berikutnya */
-        }
-      </style>
-      <div class="container">
-        <img
-          src="https://github.com/anaksubuh/indonesiaindah/blob/main/img/paskah-ukmk-universitas-tidar-2025-di-gereja-katolik-santa-maria-fatima-magelang/img_1245.jpg?raw=true"
-          alt="Romo Ignatius Adi Sapto Wibowo memulai komuni" width="70%">
-        <p class="caption">Peserta Paskah di Aula Gereja Santa Maria Fatima Magelang</p>
-      </div>
+          Dengan kebangkitan Yesus, kita diajak untuk mewartakan Injil dan mewartakan kebangkitan, sehingga membuat
+          orang
+          menjadi terkejut dan bangkit dari keterpurukannya, berubah untuk menjadi semakin berani mengikuti pewartaan
+          Kristus di dalam kehidupannya.
 
-      <p class="text-base mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
-        Romo Ignatius kemudian menyampaikan pesan firman Tuhan demikian, "Be Rise, Be Love, Be Light memiliki sebuah
-        arti yang lugas. Be Rise berarti “Bangkitlah”, Be Love berarti “Jadilah Cinta”, Be Light berarti “Jadilah
-        Cahaya”.
+          Ketua pelaksana Paskah, Ignasia Rhea Dhirattaseka Pradisya menyampaikan pesan bahwa menyebarkan kasih kepada
+          sesama dan menjadi pembawa terang bagi dunia menggambarkan kebangkitan, cinta dan terang, sesuai dengan tema
+          paskah tahun ini.
 
-        Makna kebangkitan Yesus yang dapat kita ambil dan relevansikan dengan kehidupan sehari-hari adalah ajakan untuk
-        bangkit—bangkit dari rasa malas, dari sikap acuh tak acuh, dari keengganan untuk belajar dan membaca, serta dari
-        berbagai godaan yang menghalangi kita untuk berjuang kembali.
+          Kemudian, Ketua UKMK (Unit Kegiatan Mahasiswa Kristiani), Hiskia Marceliko berpesan agar semoga kematian dan
+          kebangkitan Yesus Kristus menjadi sebuah tanda kehikmatan kehidupan kita di dunia.
 
-        Ketika Yesus hadir di tengah-tengah para rasul, Ia mengajak kita untuk keluar dari segala bentuk ketertindasan
-        batin: rasa malas, egoisme, dan kecenderungan untuk menang sendiri semua hal yang menghambat kita untuk bangkit
-        dan bertumbuh.
+          Yang terakhir Romo Ignatius Adi Sapto Wibowo menyampaikan pesan bahwa kita hendaknya semakin aktif dalam
+          kebersamaan kasih pada tempat ini, sehingga kita tidak ada yang hilang. Jikalau tidak, Kristus pasti akan
+          bersedih ketika ada salah satu dari kita hilang. (*)
+        </p>
 
-        Setelah bangkit dari semua itu, kita diajak menjadi cinta yang menerangi. Sudahkah kita sungguh menyadari apa
-        saja yang selama ini menghalangi kita untuk bangkit? Dan, maukah kita dengan sungguh melakukan kebangkitan dari
-        hal-hal yang membuat hidup kita seolah terbelenggu atau terkutuk?
+        <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Biodata</h2>
+        <ul class="list-disc list-inside mb-4 text-gray-700 dark:text-gray-300 text-base">
+          <li>Penulis : Hosea Ferdian Victor Ambalat dan Chris</li>
+          <li>Penyunting: Hanna Mutiara Sitorus</li>
+        </ul>
 
-        Berdasarkan cinta Yesus yang telah mengorbankan diri untuk kita, orang-orang dibuat terkejut. Terkejut karena
-        dilakukan Rasul di Kerajaan Kekal mereka manusia biasa yang berani bercerita Paskah di hadapan orang-orang
-        pilihan. Sering kali kita direndahkan oleh orang lain karena kita malas, sering terlambat, dan tidak mau
-        belajar.
+        <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Komentar Pengamat</h2>
+        <blockquote class="border-l-4 border-blue-500 pl-4 italic mb-4 text-gray-600 dark:text-gray-400">
+          Selamat menyambut hari raya paskah Tuhan yesus memberkati
+        </blockquote>
 
-        Dengan kebangkitan Yesus, kita diajak untuk mewartakan Injil dan mewartakan kebangkitan, sehingga membuat orang
-        menjadi terkejut dan bangkit dari keterpurukannya, berubah untuk menjadi semakin berani mengikuti pewartaan
-        Kristus di dalam kehidupannya.
+      </article>
 
-        Ketua pelaksana Paskah, Ignasia Rhea Dhirattaseka Pradisya menyampaikan pesan bahwa menyebarkan kasih kepada
-        sesama dan menjadi pembawa terang bagi dunia menggambarkan kebangkitan, cinta dan terang, sesuai dengan tema
-        paskah tahun ini.
+      <aside class="sidebar">
+        <h2>Berita Lainnya</h2>
+        <ul>
+          <li>
+            <a
+              href="https://money.kompas.com/read/2025/05/11/212030526/mau-setop-impor-bbm-dari-singapura-pemerintah-perlu-antisipasi-hal-ini?source=headline">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail BBM" />
+              <span>Mau Setop Impor BBM dari Singapura...</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bola.kompas.com/read/2025/05/11/21053998/permohonan-maaf-arema-fc-atas-insiden-pelemparan-bus-persik?source=headline">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail Arema" />
+              <span>Permohonan Maaf Arema FC atas Insiden Bus</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://regional.kompas.com/read/2025/05/11/212242578/bus-persik-kediri-dilempari-saat-keluar-stadion-kanjuruhan-dua-staf-terluka?source=headline">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail Persik" />
+              <span>Bus Persik Kediri Dilempari, Dua Staf Terluka</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://regional.kompas.com/read/2025/05/11/213429778/jasad-korban-tppo-kamboja-asal-banyuwangi-tiba-di-bandara-juanda?source=headline">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail TPPO" />
+              <span>Korban TPPO Kamboja Asal Banyuwangi Tiba</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://regional.kompas.com/read/2025/05/11/221605378/kapal-wisata-dari-pulau-tikus-ke-kota-bengkulu-karam-7-meninggal-dunia?source=headline">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail Kapal" />
+              <span>Kapal Wisata Karam, 7 Meninggal Dunia</span>
+            </a>
+          </li>
+        </ul>
 
-        Kemudian, Ketua UKMK (Unit Kegiatan Mahasiswa Kristiani), Hiskia Marceliko berpesan agar semoga kematian dan
-        kebangkitan Yesus Kristus menjadi sebuah tanda kehikmatan kehidupan kita di dunia.
+        <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Paskah Ukmk UNTIDAR 2025</h2>
+        <ul>
+          <li>
+            <a
+              href="https://money.kompas.com/read/2025/05/11/220000026/jaga-rupiah-cadangan-devisa-ri-berpotensi-terkuras-hingga-tengah-2025?source=headline">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail Devisa" />
+              <span>Cadangan Devisa RI Bisa Terkuras...</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://money.kompas.com/read/2025/05/11/213704026/pln-beri-diskon-tambah-daya-listrik-50-persen-berlaku-hingga-23-mei-2025?source=sorotan">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail PLN" />
+              <span>PLN Beri Diskon Tambah Daya Listrik</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://money.kompas.com/read/2025/05/11/213000626/robert-kiyosaki--beralihlah-ke-bitcoin-emas-dan-perak-?source=sorotan">
+              <img src="https://via.placeholder.com/100x70" alt="Thumbnail Bitcoin" />
+              <span>Kiyosaki: Beralih ke Bitcoin, Emas, Perak</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
 
-        Yang terakhir Romo Ignatius Adi Sapto Wibowo menyampaikan pesan bahwa kita hendaknya semakin aktif dalam
-        kebersamaan kasih pada tempat ini, sehingga kita tidak ada yang hilang. Jikalau tidak, Kristus pasti akan
-        bersedih ketika ada salah satu dari kita hilang. (*)
-      </p>
-
-      <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Biodata</h2>
-      <ul class="list-disc list-inside mb-4 text-gray-700 dark:text-gray-300 text-base">
-        <li>Penulis : Hosea Ferdian Victor Ambalat dan Chris</li>
-        <li>Penyunting: Hanna Mutiara Sitorus</li>
-      </ul>
-
-      <h2 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-300">Komentar Pengamat</h2>
-      <blockquote class="border-l-4 border-blue-500 pl-4 italic mb-4 text-gray-600 dark:text-gray-400">
-        Selamat menyambut hari raya paskah Tuhan yesus memberkati
-      </blockquote>
-
-    </article>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer class="bg-gray-100 dark:bg-gray-800 p-4 mt-10 text-center text-xs text-gray-500 dark:text-gray-400">
     © 2025 indonesiaindah - Semua hak cipta dilindungi. | <a href="#" class="underline">Kontak</a> | <a href="#"
       class="underline">Tentang Kami</a>
   </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('toggle-theme-btn');
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    function setTheme(theme) {
+      localStorage.setItem('theme', theme);
+      if (theme === 'dark') {
+        body.classList.add('dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      } else {
+        body.classList.remove('dark');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+    }
+
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+      setTheme(currentTheme);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const activeTheme = localStorage.getItem('theme');
+      setTheme(activeTheme === 'dark' ? 'light' : 'dark');
+    });
+  </script>
 
 </body>
 
